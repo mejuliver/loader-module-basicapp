@@ -1,0 +1,20 @@
+<?php
+	require_once(__DIR__.'/loader/Loader.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<?php
+		$loader->load('basicapp')->header();
+	?>
+</head>
+<body>
+	
+<?php
+	$loader->load('basicapp')->footer();
+?>
+
+</body>
+</html>

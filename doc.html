@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>How to Use</title>
+</head>
+<body>
+	<h3>Load header assets</h3>
+	<pre>
+		$loader->load('basicapp')->header();
+	</pre>
+	<strong>If there are specific plugins you dont want to be loaded then you can set an array of exluded plugins</strong>
+	<pre>
+		$loader->load('basicapp')->header([
+			'bootstrap', // will not be loaded
+			'jquery' // will not be loaded
+		]);
+	</pre>
+	<strong>If you want to use the CDN source, you can forcely tell the plugin to load from cdn source by specifying a true boolean as a 2nd parameter</strong>
+	<pre>
+		$loader->load('basicapp')->header([],true);
+	</pre>
+	<br>
+	<br>
+	<h3>Load footer assets</h3>
+	<pre>
+		$loader->load('basicapp')->footer();
+	</pre>
+	<strong>If there are specific plugins you dont want to be loaded then you can set an array of exluded plugins</strong>
+	<pre>
+		$loader->load('basicapp')->footer([
+			'bootstrap', // will not be loaded
+			'jquery' // will not be loaded
+		]);
+	</pre>
+	<strong>with options</strong>
+	<strong>If you want to use the CDN source, you can forcely tell the plugin to load from cdn source by specifying a true boolean as a 2nd parameter</strong>
+	<pre>
+		$loader->load('basicapp')->header([],true);
+	</pre>
+	<br>
+	<strong>Plugins</strong>
+	<ul style="list-style:none;padding:0px;">
+		<li><a href="https://michalsnik.github.io/aos/" target="_BLANK">aosjs v2.3.4</a></li>
+		<li><a href="https://jquery.com" target="_BLANK">jquery v3.4.1</a></li>
+		<li><a href="https://getbootstrap.com" target="_BLANK">bootstrap v4.3.1</a></li>
+		<li><a href="https://daneden.github.io/animate.css/" target="_BLANK">animatecss v3.7.0</a></li>
+		<li><a href="https://themify.me/themify-icons" target="_BLANK">themify (themify icons)</a></li>
+		<li><a href="http://flexslider.woothemes.com/" target="_BLANK">flexslider v2.7.2</a></li>
+		<li>smoothscroll</li>
+		<li><a href="http://zavoloklom.github.io/material-design-iconic-font/icons.html" target="_BLANK">materialicons v2.2</a></li>
+		<li><a href="https://github.com/mejuliver/j-components" target="_BLANK">jcomponents v2</a></li>
+		<li>pdcomponents v1</li>
+
+	</ul>
+</body>
+</html>
